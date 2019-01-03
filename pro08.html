@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성8</title>
+    <style>
+/*
+    zoom(콘텐츠 크기 조절)
+    counter-reset(개요번호 시작값 설정)
+    counter-increment(개요번호 증가)
+    content(텍스트나 태그 속성을 값으로 출력)
+*/
+        .data {width: 800px;height: 400px;}
+        .con1 { zoom:2; *zoom:3; _zoom:4;}
+        .con3 { zoom:0.5; }
+        
+        .counter { counter-reset: section; }
+        h1 { counter-reset: subsection; }
+        h1::before { counter-increment: section; content: "Section" counter(section) ". "}
+        h2 { padding-left: 15px; }
+        h2::before { counter-increment: subsection; content: counter(section) ". " counter(subsection) " "; }
+    </style>
+</head>
+<body>
+    <div class="data con1">
+        <p>살기 좋은 우리 나라 대한민국<img src="http://placehold.it/300x240" alt=""></p>
+    </div>
+    <div class="data con2">
+        <p>살기 좋은 우리 나라 대한민국<img src="http://placehold.it/300x240" alt=""></p>
+    </div>
+    <div class="data con3">
+        <p>살기 좋은 우리 나라 대한민국<img src="http://placehold.it/300x240" alt=""></p>
+    </div>
+    <section class="counter">
+        <h1>HTML5</h1>
+        <h2>HTML TAG</h2>
+        <h2>CSS</h2>
+        
+        <h1>Script</h1>
+        <h2>Javscript</h2>
+        <h2>jQuery</h2>
+        
+        <h1>XML Language</h1>
+        <h2>XML</h2>
+        <h2>XSL</h2>
+    </section>
+    <section class="counter">
+        <h1>기획</h1>
+        <h2>디지털디자인 프로젝트 기초조사</h2>
+        <h2>디지털디자인 분석/설계</h2>
+        
+        <h1>디자인</h1>
+        <h2>디자인 구성요소 설계</h2>
+        <h2>디자인 구성요소 제작</h2>
+        <h2>시안 디자인 개발</h2>
+        
+        <h1>구현</h1>
+        <h2>GUI 디자인</h2>
+        <h2>프로젝트 완료</h2>
+    </section>
+</body>
+</html>

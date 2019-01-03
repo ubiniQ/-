@@ -1,0 +1,31 @@
+ 폰트관련 속성
+        응용 프로그램용 폰트
+        .ttf   >윈도우용
+        .otf   >애플용
+        브라우저에서만 반응하는 폰트
+        .eot >IE에서 주로 지원, opera, safari, chrome, fire foxs등 지원
+        .woff >opera, safari, chrome, fire foxs등 지원
+
+
+
+eot.exe 이용해 ttf파일 eot파일로 변환
+
+cmd
+e: -드라이브 명령
+font - 폴더 접속 명령
+eot  폰트이름.ttf   폰트이름.eot
+
+sfnt2woff 이용해 ttf파일 woff로 변환
+
+cmd
+e: -드라이브 명령
+font - 폴더 접속 명령
+sfnt2woff  폰트이름.ttf
+
+ 웹브라우저에서 대표적으로 제공하는 대체폰트  
+        serif(명조계열), sans-serif(고딕계열),monospace(정사각모양),
+ cursive(궁서계열), fantasy(그림계열)
+
+font-size
+em, pt, px, per, rem, vw, vh
+font-weight

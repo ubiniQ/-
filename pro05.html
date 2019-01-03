@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성5</title>
+    <style>
+/*
+    위치관련 속성 = 레이아웃 속성
+        1. float: 흐름 속성(left, right, none)
+        2. clear: 흐름 해제(left, right, none, both)
+        3. position: 배치-위치 기준(absolute, relative, static, fixed)
+        absolute:절대적 배치 - 문서나 부모의 4개의 구석점을 기준으로 위치 배치
+            ->left, right, top, bottom, z-index
+        relative:상대적 배치 - 이전 요소의 정해진 크기(갖고 있는 크기)의 다음에 배치
+            ->float, margin-left, margin-right, margin-top, margin-bottom
+        static:정적 배치 - 물이 흐르듯이 콘텐츠가 갖고 있는 크기만큼 자동으로 배치(기본값)
+            ->float, margin-left, margin-right, margin-top, margin-bottom
+        fixed:화면에 고정 배치 - 스크롤시에도 화면에 고정되어 마치 따라오는 듯한 배치
+            ->left, right, top, bottom, z-index
+        ※sra, srs, sra등으로 계층별로 구성
+        4. left: 위치기준 왼쪽으로 부터 떨어진 거리(px단위, %단위, auto)
+        5. right: 위치기준 오른쪽으로 부터 떨어진 거리(px단위, %단위, auto)
+        6. top: 위치기준 위쪽으로 부터 떨어진 거리(px단위, %단위, auto)
+        7. bottom: 위치기준 아래쪽으로 부터 떨어진 거리(px단위, %단위, auto)
+        8. z-index: 콘텐츠가 서로 겹쳐 있을 경우 레이어값을 지정하여 상층 또는 바닥에 배치할 지의 층수(숫자 정수)
+*/
+        
+        * { margin: 0; padding: 0;}
+        body, html { width: 100%; height: 100%; }
+        .wrap { width: 480px; height: 120px; position: relative; margin: 0 auto; overflow: hidden; }
+        .col {float: left; width: 100px; height: 100px; margin: 10px; }
+        #img1, #img2, #img3, #img4 { position: absolute; }
+        #img1 { left: 30px; top: 30px; }
+        #img2 { left: 60px; top: 60px; z-index: 10;}
+        #img3 { left: 90px; top: 90px; }
+        #img4 { right: 200px; bottom: 40px; }
+        #quick { position: fixed; z-index: 999; right: 100px; top: 150px; width: 100px; height: 160px; background: #333; }
+        #quick span { display: block; width: 100px; height: 40px; line-height: 40px; color: #fff; text-align: center; }
+        .blank { height: 1000px; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+    </div>
+    <div class="wrap box1">
+        <section class="col" id="img1"><img src="http://placehold.it/100x100/f00" alt=""></section>
+        <section class="col" id="img2"><img src="http://placehold.it/100x100/0f0" alt=""></section>
+        <section class="col" id="img3"><img src="http://placehold.it/100x100/00f" alt=""></section>
+        <section class="col" id="img4"><img src="http://placehold.it/100x100/ff0" alt=""></section>
+    </div>
+    <div class="wrap box2">
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+        <section class="col"><img src="http://placehold.it/100x100" alt=""></section>
+    </div>
+    <div id="quick">
+        <span>링크1</span>
+        <span>링크2</span>
+        <span>링크3</span>
+        <span>링크4</span>
+    </div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+</body>
+</html>

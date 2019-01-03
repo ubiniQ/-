@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자11</title>
+    <style>
+    /* 전/후 선택자, 부정 선택자 */
+        a { text-decoration: none; }
+        a:link { color: red; }
+        a:link::after { content: ' -'attr(title) '- ' attr(href); }
+        a:link::before { content: ' 사이트 - '; }
+        input:not([type=password]) { background: red; }
+    </style>
+</head>
+<body>
+    <h1><a>링크 없는 a태그</a></h1>
+    <h1><a href="http://www.naver.com" title="네이버">링크1</a></h1>
+    <h1><a href="http://www.daum.net" title="다음">링크2</a></h1>
+    <h1><a href="http://www.google.com" title="구글">링크3</a></h1>
+    <input >
+    <input type="text">
+    <input type="password">
+    <input type="file">
+</body>
+</html>

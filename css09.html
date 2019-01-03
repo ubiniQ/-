@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자9</title>
+    <style>
+        /* 형태 구조 선택자 */
+        a { color: #000; text-decoration: none; }
+        li:first-of-type a { color: red; }
+        /* li중에 1번째 */
+        li:last-of-type a { color: green; }
+        /* li중에 마지막 */
+        li:nth-child(2) a { color: skyblue; }
+        li:only-of-type a { color: hotpink; }
+        .page { height: 900x; background: red; margin-top: 20px; }
+        .page:target { background: orange; }
+        /* 타겟 설정으로 선택시 변화*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">강아지</a></li>
+        <li><a href="">완전 귀여움</a></li>
+        <li><a href="">심쿵함</a></li>
+        <li><a href="">똑또케</a></li>
+        <li><a href="">이쁘다</a></li>
+        <li><a href="">키우고 싶다</a></li>
+        <li><a href="">고양이</a></li>
+        <li><a href="">다람쥐</a></li>
+    </ul>
+    <a href="#page2">두 번째 페이지로</a>
+    <a href="#page3">세 번째 페이지로</a>
+    <ul>
+        <li><a href="#">강아지</a></li>
+        <li><a href="#">못난이</a></li>
+        <li><a href="#">심술쟁이</a></li>
+        <li><a href="#">바보</a></li>
+    </ul>
+    <ul>
+        <li><a href="">이수연</a></li>
+    </ul>
+</body>
+<div class="page" id="page2">2페이지</div>
+<div class="page" id="page3">3페이지</div>
+</html>

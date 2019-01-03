@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자7</title>
+    <style>
+        input:enabled { background: pink; }
+        input:disabled { background: purple; }
+        input + label { color: blue; }
+        input:checked + label { color: red; }
+        input: focus { background: orang;}
+    </style>
+</head>
+<body>
+   <input /><br>
+    <input type="checkbox" checked>
+    <label for="">선택1</label>
+    <br>
+    <input type="checkbox">
+    <label for="">선택2</label>
+    <br>
+    <input disabled="disabled">
+    <br>
+</body>
+</html>

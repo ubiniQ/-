@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성1</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <style>
+/*    폰트관련 속성
+        응용 프로그램용 폰트
+        .ttf >윈도우
+        .otf >애플
+        브라우저에서만 반응하는 폰트
+        .eot >IE에서 주로 지원, opera, safari, chrome, fire foxs등 지원
+        .woff >opera, safari, chrome, fire foxs등 지원   */
+        @import "font01.css"
+        .font1 {font-family: 'Noto Sans KR', sans-serif;}
+        .font2 {font-family: "NanumGothic", "나눔고딕", sans-serif;}
+        .font3 {font-family : "Gothic 45", cursive;}
+/*      웹브라우저에서 대표적으로 제공하는 대체폰트  
+        serif(명조계열), sans-serif(고딕계열),monospace(정사각모양), cursive(궁서계열), fantasy(그림계열) */
+        body, html { font-size: 14px; }
+        .em1 { font-size: 3.5em; }
+        .pt1 { font-size: 20pt; }
+        .px1 { font-size: 20px; }
+        .per1 { font-size: 350%; }
+        .rem1 { font-size: 3.5rem; }
+        .vw1 { font-size: 3.5vw; }
+        .vh1 { font-size: 3.5vh; }
+        .wt1 { font-weight: normal; }
+        .wt2 { font-weight: 100; }
+        .wt3 { font-weight: bold;}
+        .style1 { font-style: italic; }
+        .style2 { font-style: normal; }
+        .variant1 { font-variant: small-caps; }
+        .variant2 { font-variant: normal; }
+        .ht1 { line-height: 40px; }
+        .ht2 { line-height: 3; }
+/*        font: [font-weight, font-style, font-variant]->[font-size/lineheight]->[font-family]   */
+        .fnt1 { font: bold italic normal 24px/1.6 "돋움", "Dotum", sans-serif; }
+        .fnt2 { font: bold 24px/1.4 "NanumGothic", "나눔고딕", sans-serif; }
+        .fnt3
+    </style>
+</head>
+<body>
+    <p class="font1">이수연</p>
+    <p class="font2">이수연</p>
+    <p class="font3">abcdefg</p>
+    
+    <p class="em1">em단위 이수연</p>
+    <p class="pt1">pt단위 이수연</p>
+    <p class="px1">px단위 이수연</p>
+    <p class="per1">percent단위 이수연</p>
+    <p class="rem1">rem단위 이수연</p>
+    <p class="vw1">vw단위 이수연</p>
+    <p class="vh1">vh단위 이수연</p>
+    
+    <p class="wt1">일반 글자</p>
+    <p class="wt2">가는 글자</p>
+    <p class="wt3">굵은 글자</p>
+    
+    <p class="style1">기울임꼴 문자</p>
+    <p class="style2">기본 문자</p>
+    
+    <p class="variant1">LeeSuYeon</p>
+    <p class="variant2">LeeSuYeon</p>
+    
+    <p class="ht1">행높이 40px 이수연</p>
+    <p class="ht2">행높이 3배 이수연</p>
+    
+    <p class="fnt1">폰트 통합 속성1</p>
+    <p class="fnt2">폰트 통합 속성2</p>
+    <div class="fnt3">
+        <img src="fnt3.png" alt="폰트이미지">
+    </div>
+</body>
+</html>

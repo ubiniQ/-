@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성4</title>
+    <style>
+/*
+    박스 관련 속성
+        width: 폭, height: 높이, padding: 안 여백, margin: 바깥 여백, 
+        border: 테두리, display: 표시, overflow: 흘러넘침, border-radius: 모서리 둥글게,
+        opacity: 불투명도, box-sizing: 크기 설정 기준
+*/
+/*         .bor { border-bottom-color; }*/
+/*
+        width,height: %단위, px단위, vw/vh단위, auto
+        padding, margin, border: 값1, 값1(위아래) 값2(좌우), 값1(위) 값2(우) 값3(아래) 값4(좌)
+        padding, mrgin, border 세부 : padding-top, padding-bottom, padding-left, padding-right
+        border만 세부 속성: border-color, border-width, border-style
+        border만의 세세 속성: border-top-color와 같이 border-위치-세부속성으로 기재
+        선 모양: border-style(solid, dashed, dotted, double)
+        border-radius: 값1, 값1 값2,값1 값2 값3 값4
+        opcity : 0~1까지 실수 단위로 입력
+        overflow : hidden, visible, scroll,auto
+        display : none, block, inline, inline-block
+        box-sizing : content-box, border-box, {padding: box}
+*/
+               
+        * { margin: 0; padding: 0;}
+        ul {list-style: none; }
+        a { text-decoration: none; color: #333; }
+        .row {width: 400px; height: 100px; clear: both; }
+        .item1 li {width:100px; float :left; padding: 10px;}
+        .item2 li {width:100px; float :left; margin: 15px; opacity: 0.7; background: #ff0; }
+        .item3 li {width:100px; float :left; padding: 10px;
+        box-sizing: border-box; border: 2px solid #000; 
+        border-radius: 10px 5px 20px 15px; }
+    </style>
+</head>
+<body>
+    <div class="row item1">
+        <ul class="menu1">
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </div>
+    <div class="row item2">
+        <ul class="menu2">
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </div>
+    <div class="row item3">
+        <ul class="menu3">
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </div>
+</body>
+</html>

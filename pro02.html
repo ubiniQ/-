@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성2</title>
+    <style>
+        .align1 { text-align: center; }
+        .align2 { text-align: right; }
+        .talign1 { vertical-align: middle; /*이미지에 대한 글자 세로정렬*/}
+        .indent1 { text-indent: 20px; padding: 30px; }
+        .indent2 { text-indent: -20px; padding:30px; }
+        .trans1 { text-transform: uppercase; }
+        .trans2 { text-transform: capitalize; }
+        .trans3 { text-transform: lowercase; }
+        .deco1 { text-decoration: underline; }
+        .deco2 { text-decoration: line-through; }
+        .deco3 { text-decoration: overline; }
+        .deco4 { text-decoration: none; }
+        .letter1 { letter-spacing: 20px; }
+        .letter2 { letter-spacing: -10px; }
+        .word1 { word-spacing: 20px; }
+        .word2 { word-spacing: -5px; }
+        .wd { width: 200px; }
+        .txt1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .txt2 { white-space: normal; line-height: 1.2; height: 3.6em; text-align: left; word-wrap: break-word; display: -webkit- box; -webkit-line-clamp:3;/*표시할 줄수*/ -webkit-box-orient: vertical; overflow: hidden; }
+        /* word-wrap : 단어 보호, brek-word/normal */
+        /* line-clamp : 표시할 줄 수 */
+        
+    </style>
+</head>
+<body>
+    <p class="align1">가운데 정렬</p>
+    <p class="align2">오른쪽 정렬</p>
+    <p class="vtalign1">이미지와의 정렬
+    <img src= "http://placehold.it/300x240" alt="가운데이미지">
+    </p>
+    <p class="vtalign2">이미지와의 정렬2
+    <img src="http://placehold.it/300x240" alt="일반이미지"></p>
+    <p class="indent1">
+    모든 국민은 거주·이전의 자유를 가진다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 사법권은 법관으로 구성된 법원에 속한다.
+
+모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다.
+   </p>
+    <p class="indent2">
+    모든 국민은 거주·이전의 자유를 가진다. 헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다. 사법권은 법관으로 구성된 법원에 속한다.
+
+모든 국민은 사생활의 비밀과 자유를 침해받지 아니한다. 국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국회는 헌법개정안이 공고된 날로부터 60일 이내에 의결하여야 하며, 국회의 의결은 재적의원 3분의 2 이상의 찬성을 얻어야 한다.
+</p>
+<p class="trans1">bEaUtiFul Country~! kORea~! 모두 대문자로</p>
+<p class="trans2">bEaUtiFul Country~! kORea~! 단어 첫글자만</p>
+<p class="trans3">bEaUtiFul Country~! kORea~! 모두 소문자로</p>
+
+<p class="deco1">슬슬 배가 고프당~!!!!! 밑줄</p>
+<p class="deco2">슬슬 배가 고프당~!!!!! 가운데 취소선</p>
+<p class="deco3">슬슬 배가 고프당~!!!!! 윗줄</p>
+<p class="deco4">슬슬 배가 고프당~!!!!! 줄없음</p>
+
+<p class="letter1">점심 뭐 먹을까나~????? 자간 20px</p>
+<p class="letter2">점심 뭐 먹을까나~????? 자간 -10px</p>
+
+<p class="word1">므냥냥 으항항 크핫핫 맛이 갔어요~ 어간 20px</p>
+<p class="word2">므냥냥 으항항 크핫핫 맛이 갔어요~ 어간 -5px</p>
+
+<p class="wd txt1">
+대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다.
+</p>
+<p class="wd txt2">
+대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다. 근로조건의 기준은 인간의 존엄성을 보장하도록 법률로 정한다. 대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다.
+</p>
+</body>
+</html>

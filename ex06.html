@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 연습6-테이블</title>
+    <style>
+        td { text-align: center; }
+        td.num { text-align: right; }
+        .col1 { width: 10%; }
+        .col2 { width: 25%; }
+        .col3 { width: 15%; }
+        .col4 { width: 15%; }
+    </style>
+</head>
+<body>
+<h2>테이블</h2>
+<table border=1 cellspacing=0 cellpadding=10 align=center>
+    <caption>2018년 스미트기기 UX/UI반 상반기 성적</caption>
+    <colgroup>
+        <col class="col1"/>
+        <col class="col2"/>
+        <col class="col3"/>
+        <col class="col4"/>
+        <col class="col5"/>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>번호</th>
+            <th>성명</th>
+            <th>디자인 기획</th>
+            <th>디자인 구현</th>
+            <th>비고</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="5">평균 : 86</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>김민정</td>
+            <td class="num">85</td>
+            <td class="num">92</td>
+            <td>착함</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>김지원</td>
+            <td class="num">78</td>
+            <td class="num">97</td>
+            <td>원만함</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>김지혜</td>
+            <td class="num">81</td>
+            <td class="num">88</td>
+            <td>너그러움</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>박소은</td>
+            <td class="num">91</td>
+            <td class="num">84</td>
+            <td>성실함</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>배대은</td>
+            <td class="num">89</td>
+            <td class="num">86</td>
+            <td>묵언수행중</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>신서연</td>
+            <td class="num">87</td>
+            <td class="num">82</td>
+            <td>감사함</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>여경희</td>
+            <td class="num">99</td>
+            <td class="num">74</td>
+            <td>어려움</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>이수연</td>
+            <td class="num">89</td>
+            <td class="num">94</td>
+            <td>가끔멍때림</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>이신혜</td>
+            <td class="num">89</td>
+            <td class="num">77</td>
+            <td>공상중</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>임광민</td>
+            <td class="num">83</td>
+            <td class="num">75</td>
+            <td>큐티함</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>임희은</td>
+            <td class="num">89</td>
+            <td class="num">92</td>
+            <td>가끔째려봄</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>최현아</td>
+            <td class="num">94</td>
+            <td class="num">96</td>
+            <td>라면먹는중</td>
+        </tr>
+    </tbody>
+</table>    
+</body>
+</html>

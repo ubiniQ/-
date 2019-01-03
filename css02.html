@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자2</title>
+<!--    <link rel="stylesheet" href="style01.css">-->
+    <!-- 각주 ctrl+/-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <style>
+    /* */
+        @import url("style01.css");
+        * { font-family: 'Nanum Gothic', sans-serif;}
+        ul { list-style: none; color: yellow !important; }
+        #list { color: blue; }
+        .list { color: red; }
+        ul { color: orange; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="list">첫 번째</li>
+        <li>두 번째</li>
+        <li class="list" id="list">세 번째</li>
+        <li>네 번째</li>
+    </ul>
+    <ol>
+        <li class="list">첫 번째</li>
+        <li>두 번째</li>
+        <li>세 번째</li>
+        <li class="list">네 번째</li>
+    </ol>
+</body>
+</html>

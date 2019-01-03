@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자1</title>
+    <style>
+        /* 스타일은 가장 마지막에 오는 것 그중에서도 #=id가 제일 높고
+        .=class가 높고 마지막 태그 순
+        전체선택자
+태그선택자
+클래스선택자
+아이디선택자
+복수선택자(요소1, 요소2)
+부모 > 자식선택자
+조상 후손선택자
+조합선택자(태그.클래스#아이디)*/
+        * { font-size: 12pt; }
+        #data { color: yellow; }
+        p { text-decoration: underline; }
+        .hit { text-decoration: overline; color: brown; }
+        p, span { text-decoration: underline; }
+        span#data { color: red; }
+        .hit#data { color: blue; }
+        span.hit#data { color: navy; }
+        p > span { }
+        p > .hit { }
+        p > #data { }
+        p > span.hit { }
+        p > span#data { }
+        p > .hit#data { }
+        p > spn.hit#data { }
+        p * { }
+        p span { }
+        p .hit { }
+        p #data { }
+        p span.hit { }
+        p span#data { }
+        p .hit#data { }
+        p spn.hit#data { }
+        p #data.hit { }
+    </style>
+</head>
+<body>
+    <p class="paragraph">
+      당신은 <strong>공부</strong>를 하고 계십니까?
+        <em><span class="hit" id="data">밥</span></em>은 먹고 다닙니까~!?
+    </p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@font-face {
+    font-family : "NanumGothic";
+    src : url("NanumGothic.eot?iefix") format("embeded-opentype"),
+        url("NanumGothic.woff") format("woff"), 
+        url("NanumGothic.woff2") format("woff2")
+        url("NanumGothic.otf") format("opnetype"), 
+        url("NanumGothic.ttf") format("truetype");
+}
+@font-face {
+    font-family : "Gothic 45";
+    src:url("Gothic45.eot?iefix") format("embeded-opentype"),
+        url("Gothic45.woff") format("woff"),
+        url("Gothic45.ttf") format("truetype");
+}

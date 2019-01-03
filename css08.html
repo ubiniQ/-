@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자8</title>
+    <style>
+    /*순서 위치 선택자*/
+        ul { list-style: none; overflow: hidden; }
+        li {float: left; padding: 15px; border: 1px solid #000000; border-right: 0px; }
+        li:first-child { border-radius: 10px 0px 0px 10px; }
+        li:last-child { border-radius: 0px 10px 10px 0px; border-right: 1px solid #000000; }
+        li:nth-child(3n) { background: red; }
+        li:nth-child(3n+1) { background: orange; }
+        li:nth-child(3n+2) { background: skyblue; }
+        /*li중 3의 배수에 +2한 아이*/
+        li:nth-child(4) { background: yellow; }
+        /* li중 4번째 아이*/
+        a { text-decoration: none; color: #666; font-weight: 900; }
+        /* a 전체*/
+        a:empty {display: block; width: 120px; height: 50px; background: black; }
+        /*표시부분이 빈 경우*/
+        li:only-child { background: navy; }
+        /*형제 없이 혼자 있는 경우*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">강아지</a></li>
+        <li><a href="">완전 귀여움</a></li>
+        <li><a href="">심쿵함</a></li>
+        <li><a href="">똑또케</a></li>
+        <li><a href="">이쁘다</a></li>
+        <li><a href="">키우고 싶다</a></li>
+        <li><a href="">고양이</a></li>
+        <li><a href="">다람쥐</a></li>
+    </ul>
+    <a href="http://www.naver.com"></a>
+    <a href="http://www.google.com">구글</a>
+    <ul>
+        <li><a href="#">강아지</a></li>
+        <li><a href="#">못난이</a></li>
+        <li><a href="#">심술쟁이</a></li>
+        <li><a href="#">바보</a></li>
+    </ul>
+    <ul>
+        <li><a href="">이수연</a></li>
+    </ul>
+</body>
+</html>

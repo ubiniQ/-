@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css 선택자10</title>
+    <style>
+    /* 언어 선택자, 첫 줄, 첫 글자, 반응문자 선택자 */
+        p::first-line { color: red; }
+        /*첫줄 바꾸기*/
+        p::first-letter { font-size: 3em; }
+        /* 첫 글자 바꾸기 */
+        p:lang(en) { color: green; }
+        /* 특정 언어(영어) 바꾸기 */
+        p::selection { background: pink; color: #000;}
+        /* 마우스로 드래그한 부분 바꾸기*/
+    </style>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p lng="en">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p lang="ko">모든 국민은 종교의 자유를 가진다. 국회의원은 법률이 정하는 직을 겸할 수 없다. 국회의원은 국회에서 직무상 행한 발언과 표결에 관하여 국회외에서 책임을 지지 아니한다. 국정감사 및 조사에 관한 절차 기타 필요한 사항은 법률로 정한다. 대통령은 국무총리·국무위원·행정각부의 장 기타 법률이 정하는 공사의 직을 겸할 수 없다.</p>
+</body>
+</html>

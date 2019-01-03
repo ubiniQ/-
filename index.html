@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃1</title>
+</head>
+<body>
+<!--    div.wrap>(header.hd>a+nav#gnb)+(main>(aside>nav#dnb+div.ban)+(section.content>figure#vs+h2.tit++p.para))+(footer.ft>nav#fnb+p.copyright)-->
+<div class="wrap">
+    <header class="hd">
+        <a href="index.html">로고</a>
+        <nav id="gnb">메인메뉴</nav>
+    </header>
+    <main>
+        <aside>
+            <nav id="dnb">로컬메뉴</nav>
+            <div class="ban">사이드 메뉴</div>
+        </aside>
+        <section class="content">
+            <figure id="vs">비주얼 배너</figure>
+            <h2 class="tit">제목</h2>
+            <p class="para">내용</p>
+        </section>
+    </main>
+    <footer class="ft">
+        <nav id="fnb">하단 링크</nav>
+        <p class="copyright">카피</p>
+    </footer>
+</div>
+</body>
+</html>
