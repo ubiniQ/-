@@ -1,21 +1,21 @@
 <div class="wrap">
-    <herder class="hd">
-        <a href="">�ΰ�</a>
-        <nav id="gnb">���θ޴�</nav>
-    </herder>
+    <header class="hd">
+        <a href="">로고</a>
+        <nav id="gnb">메인메뉴</nav>
+    </header>
     <main>
         <aside>
-            <nav id="dnb">���ø޴�</nav>
-            <div class="ban">���̵� ���</div>
+            <nav id="lnb">로컬메뉴</nav>
+            <div class="ban">사이드 배너</div>
         </aside>
         <section class="content">
-            <figure id="vs">���־���</figure>
-            <h2 class="tit">����</h2>
-            <p class="para">����</p>
+            <figure id="vs">비주얼배너</figure>
+            <h2 class="tit">제목</h2>
+            <p class="para">내용</p>
         </section>
     </main>
     <footer class="ft">
-        <nav id="fnb">�ϴܸ�ũ</nav>
-        <p class="copyright">ī��</p>
+        <nav id="fnb">하단링크</nav>
+        <p class="copyright">카피</p>
     </footer>
 </div>
