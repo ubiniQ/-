@@ -1,0 +1,31 @@
+@charset "utf-8";
+* { margin: 0;padding: 0; }
+html, body { width: 100%; height: 100%; clear: both; overflow: hidden; }
+ul { list-style: none; }
+a { text-decoration: none; }
+
+/* header */
+
+.hd {
+            height: 170px; 
+        }
+        .wrap {
+            width: 1200px; margin: 0 auto;
+        }
+        .page {
+            
+        }
+        
+        .topBan {
+            width: 100%; height: 90px; display: none;
+        }
+                
+        .tHd { width: 100%; height: 50px; }
+        .tHd a { display: block; width: 100px; height: 50px;}
+        .tLogo { display: block; width: 100px; height: 20px; text-indent: -9999px; float: left; background-image: url("../images/top_logo1.png"); background-repeat: no-repeat; background-position: center center; top: 15px; }
+        #gnb { float: left; width: 600px; height: 50px; line-height: 50px; margin-left: 50px; }
+        #gnb li { float: left; width: 80px; text-align: center; display: block; font-size: 16px; }
+        #gnb li a { color: #000; font-weight: 700;}
+        #tnb { float: right; display: block; width: 350px; height: 50px; }
+        #tnb li { float: left; text-align: center; width: 70px; display: block; height: 50px; line-height: 50px; margin-left: 10px; font-size: 14px; }
+        #tnb li a { color: #000; }
